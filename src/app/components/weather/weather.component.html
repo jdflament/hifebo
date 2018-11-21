@@ -7,7 +7,7 @@
     <div *ngIf="values.light_intensity > 300 && values.humidity < 65" class="card-icon" style="background-image: url('../../assets/images/sun.png')"></div>
     <div *ngIf="values.light_intensity <= 300 && values.light_intensity > 200 && values.humidity < 65" class="card-icon" style="background-image: url('../../assets/images/cloudy.png')"></div>
     <div *ngIf="values.light_intensity < 200 && values.humidity < 65" class="card-icon" style="background-image: url('../../assets/images/moon.png')"></div>
-    <div *ngIf="values.humidity >= 65" class="card-icon" style="background-image: url('../../assets/images/rain.png')"></div>
+    <div *ngIf="values.temperature > 0 && values.humidity >= 65" class="card-icon" style="background-image: url('../../assets/images/rain.png')"></div>
     <div *ngIf="values.temperature <= 0 && values.humidity >= 65" class="card-icon" style="background-image: url('../../assets/images/snow.png')"></div>
 
     <!-- Localization/temperature -->
