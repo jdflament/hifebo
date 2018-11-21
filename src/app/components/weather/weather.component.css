@@ -1,0 +1,122 @@
+@media screen and (max-width: 960px) {
+  .card.horizontal {
+    flex-direction: column !important;
+  }
+
+  .card.horizontal .card-image {
+    max-width: 100% !important;
+  }
+
+  .card-image img {
+    width: 100% !important;
+    height: 200px !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .card-image img {
+    height: 150px !important;
+  }
+
+  .card .card-image .card-title {
+    right: 0 !important;
+    left: inherit !important;
+    bottom: 0 !important;
+    padding: 15px !important;
+  }
+}
+
+.card-image img {
+  width: 300px;
+  height: 400px;
+}
+
+.collapsible {
+  box-shadow: none !important;
+}
+
+.collapsible-header:hover {
+  background-color: #fcfcfc;
+}
+
+.collapsible-body {
+  padding: 1.4rem;
+}
+
+.collapsible-value {
+  flex: auto;
+  text-align: right;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.collapsible-footer {
+  position: absolute;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 15px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+@media screen and (max-width: 960px) {
+  .collapsible-footer {
+    bottom: 10px;
+  }
+}
+
+.card-icon {
+  width: 100px;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+
+span.badge {
+  border-radius: 5px;
+}
+
+span.badge.green {
+  background-color: #57d484 !important;
+  color: white;
+}
+
+span.badge.red {
+  background-color: #f73232 !important;
+  color: white;
+}
+
+span.badge.orange {
+  background-color: #fb8f00 !important;
+  color: white;
+}
+
+span.badge.blue {
+  background-color: #6b9dec !important;
+  color: white;
+}
+
+span.badge.dark-blue {
+  background-color: #205cb9 !important;
+  color: white;
+}
+
+span.badge.yellow {
+  background-color: #fbea00 !important;
+  color: white;
+}
+
+span.badge.grey {
+  background-color: #dadada !important;
+  color: white;
+}
+
+span.badge.dark-grey {
+  background-color: #808080 !important;
+  color: white;
+}
