@@ -40,7 +40,7 @@
             <div class="collapsible-value">
               <span *ngIf="values.light_intensity < 250" class="badge" [ngClass]="{ 'dark-grey': values.light_intensity < 250 }">Couvert</span>
               <span *ngIf="values.light_intensity >= 250 && values.light_intensity < 400" class="badge" [ngClass]="{ 'grey': values.light_intensity >= 250 && values.light_intensity < 400 }">Nuageux</span>
-              <span *ngIf="values.light_intensity > 400" class="badge" [ngClass]="{ 'yellow': values.light_intensity > 400 }">Ensoleillé</span>
+              <span *ngIf="values.light_intensity >= 400" class="badge" [ngClass]="{ 'yellow': values.light_intensity >= 400 }">Ensoleillé</span>
             </div>
           </div>
           <div class="collapsible-body">
@@ -54,7 +54,7 @@
             <i class="material-icons">flare</i>
             UV
             <div class="collapsible-value">
-              <span *ngIf="values.ultraviolet >= 0 && values.ultraviolet < 2" class="badge" [ngClass]="{ 'green': values.ultraviolet >= 0 && values.ultraviolet < 3 }">Faible</span>
+              <span *ngIf="values.ultraviolet >= 0 && values.ultraviolet < 3" class="badge" [ngClass]="{ 'green': values.ultraviolet >= 0 && values.ultraviolet < 3 }">Faible</span>
               <span *ngIf="values.ultraviolet >= 3 && values.ultraviolet < 6" class="badge" [ngClass]="{ 'yellow': values.ultraviolet >= 3 && values.ultraviolet < 6 }">Modéré</span>
               <span *ngIf="values.ultraviolet >= 6 && values.ultraviolet < 8" class="badge" [ngClass]="{ 'orange': values.ultraviolet >= 6 && values.ultraviolet < 8 }">Élevé</span>
               <span *ngIf="values.ultraviolet >= 8" class="badge" [ngClass]="{ 'red': values.ultraviolet >= 8 }">Très élevé</span>
@@ -62,7 +62,7 @@
           </div>
           <div class="collapsible-body">
             <p>Indice : <b>{{ values.ultraviolet }}</b></p>
-            <p *ngIf="values.ultraviolet >= 0 && values.ultraviolet < 2">Aucune protection nécessaire.</p>
+            <p *ngIf="values.ultraviolet >= 0 && values.ultraviolet < 3">Aucune protection nécessaire.</p>
             <p *ngIf="values.ultraviolet >= 3 && values.ultraviolet < 6">Protection nécessaire, pensez à utiliser de la crème solaire de protection suffisante.</p>
             <p *ngIf="values.ultraviolet >= 6 && values.ultraviolet < 8">Protection indispensable, utilisez de la crème solaire de protection suffisante.</p>
             <p *ngIf="values.ultraviolet >= 8">Protection obligatoire, évitez l'exposition au soleil entre 11h et 16h.</p>
